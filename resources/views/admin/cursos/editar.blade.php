@@ -10,7 +10,7 @@
         {{ csrf_field() }}
         <input type="hidden" name="_method" value="put"> 
         @include('admin.cursos._form')
-        <button class="btn deep-orange">Atualizar</button>
+        <button class="btn deep-purple darken-2">Atualizar</button>
       </form>
     </div>
   </div>

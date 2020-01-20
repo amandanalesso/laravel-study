@@ -15,7 +15,7 @@
   
   <div class="file-field  input-field">
   
-    <div class="btn blue">
+    <div class="btn deep-purple darken-4">
       <span>Imagem</span>
       <input type="file" name="imagem">
     </div>

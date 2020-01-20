@@ -23,11 +23,11 @@
               <td>{{ $registro->id }}</td>
               <td>{{ $registro->titulo }}</td>
               <td>{{ $registro->descricao }}</td>
-              <td><img width="120" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}" /></td>
+              <td><img height="60" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}" /></td>
               <td>{{ $registro->publicado }}</td>
               <td>
-                <a class="btn deep-orange" href="{{ route('admin.cursos.editar',$registro->id) }}">Editar</a>
-                <a class="btn red" href="{{ route('admin.cursos.deletar',$registro->id) }}">Deletar</a>
+                <a class="btn deep-purple lighten-2" href="{{ route('admin.cursos.editar',$registro->id) }}">Editar</a>
+                <a class="btn deep-purple lighten-1" href="{{ route('admin.cursos.deletar',$registro->id) }}">Deletar</a>
               </td>
             </tr>
           @endforeach
@@ -35,8 +35,7 @@
       </table>
     </div>
     <div class="row">
-      <a class="btn blue" href="{{ route('admin.cursos.adicionar') }}">Adicionar</a>
-
+      <a class="btn deep-purple darken-2" href="{{ route('admin.cursos.adicionar') }}">Adicionar</a>
     </div>
 
   </div>
