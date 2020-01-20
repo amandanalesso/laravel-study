@@ -18,13 +18,13 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($registros as $regitro)
+          @foreach($registros as $registro)
             <tr>
-              <td>{{ $regitro->id }}</td>
-              <td>{{ $regitro->titulo }}</td>
-              <td>{{ $regitro->descricao }}</td>
-              <td><img width="120" src="{{asset($regitro->imagem)}}" alt="{{ $regitro->titulo }}" /></td>
-              <td>{{ $regitro->publicado }}</td>
+              <td>{{ $registro->id }}</td>
+              <td>{{ $registro->titulo }}</td>
+              <td>{{ $registro->descricao }}</td>
+              <td><img width="120" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}" /></td>
+              <td>{{ $registro->publicado }}</td>
               <td>
                 <a class="btn deep-orange" href="{{ route('admin.cursos.editar',$registro->id) }}">Editar</a>
                 <a class="btn red" href="{{ route('admin.cursos.deletar',$registro->id) }}">Deletar</a>
