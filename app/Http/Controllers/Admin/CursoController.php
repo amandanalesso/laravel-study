@@ -74,8 +74,11 @@ class CursoController extends Controller
       Curso::find($id)->update($dados);
 
       return redirect()->route('admin.cursos');
+    }
 
-
+    public function deletar($id){
+      curso::find($id)->delete();
+      return redirect()->route('admin.cursos');
     }
 
 }
